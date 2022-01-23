@@ -33,8 +33,8 @@ const Movies = ({ selectedGenre, handleClickFilter, genres }) => {
 	};
 
 	const handleRemove = (key) => {
-		const filteredMovies = movies.filter((movie) => movie.rank !== key);
-		setMovies(filteredMovies);
+		const restMovies = movies.filter((movie) => movie.rank !== key);
+		setMovies(restMovies);
 	};
 
 	const handleAdd = (key) => {
